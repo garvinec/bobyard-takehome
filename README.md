@@ -34,19 +34,25 @@ The project consists of two main parts:
      source venv/bin/activate
      ```
 
-4. Install dependencies:
+4. Go to the bobyardTakeHome Directory
+
+   ```
+   cd bobyardTakeHome
+   ```
+
+5. Install dependencies:
 
    ```
    pip install -r requirements.txt
    ```
 
-5. Run migrations:
+6. Run migrations:
 
    ```
    python manage.py migrate
    ```
 
-6. Start the development server:
+7. Start the development server:
    ```
    python manage.py runserver
    ```

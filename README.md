@@ -36,16 +36,16 @@ Open your terminal
      source venv/bin/activate
      ```
 
-4. Go to the bobyardTakeHome Directory
-
-   ```
-   cd bobyardTakeHome
-   ```
-
-5. Install dependencies:
+4. Install dependencies:
 
    ```
    pip install -r requirements.txt
+   ```
+
+5. Go to the bobyardTakeHome Directory
+
+   ```
+   cd bobyardTakeHome
    ```
 
 6. Set up the PostgreSQL database:

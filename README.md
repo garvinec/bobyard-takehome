@@ -11,6 +11,8 @@ The project consists of two main parts:
 
 ### Backend Setup
 
+Open your terminal
+
 1. Navigate to the backend directory:
 
    ```
@@ -46,18 +48,32 @@ The project consists of two main parts:
    pip install -r requirements.txt
    ```
 
-6. Run migrations:
+6. Set up the PostgreSQL database:
+
+   - Install PostgreSQL if not already installed
+   - Create a database named "bobyarddb"
+   - Change the DB_PASSWORD to your postgres password on line 79 of bobyardTakeHome/settings.py
+
+7. Run migrations:
 
    ```
    python manage.py migrate
    ```
 
-7. Start the development server:
+8. Populate DB
+
+   ```
+   python manage.py populatedb
+   ```
+
+9. Start the development server:
    ```
    python manage.py runserver
    ```
 
 ### Frontend Setup
+
+Open a separate window in your terminal
 
 1. Navigate to the frontend directory:
 

@@ -74,7 +74,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'bobyardTakeHome.wsgi.application'
 
 # For simplicity, the variables are not placed in a .env file.
-DB_NAME = "bobyarddb"
+DB_NAME = "bobyard_new"
 DB_USER = "postgres"
 DB_PASSWORD = "bobyard"  # TODO: Change this to your postgres password
 DB_HOST = "localhost"

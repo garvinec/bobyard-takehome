@@ -4,8 +4,9 @@ from django.db import models
 
 
 class Comment(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.CharField(primary_key=True, max_length=64)
     author = models.CharField(max_length=64)
+    parent = models.CharField(max_length=64, default="")
     text = models.TextField(default="")
     date = models.DateTimeField(auto_now_add=True)
     likes = models.IntegerField(default=0)

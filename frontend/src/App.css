@@ -50,6 +50,12 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+.threadedComment {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+}
+
 .commentText {
   font-size: 16px;
   font-weight: 600;
@@ -77,6 +83,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.collapseButton {
+  padding-top: 1rem;
+  color: rgb(83, 83, 253);
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .createCommentSection {

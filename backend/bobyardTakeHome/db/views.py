@@ -5,6 +5,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
+import uuid
+
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
@@ -53,6 +55,7 @@ def get_comments(request):
 
 @api_view(['POST'])
 def create_comment(request):
+    request.data['id'] = str(uuid.uuid1())
     serializer = CommentSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()

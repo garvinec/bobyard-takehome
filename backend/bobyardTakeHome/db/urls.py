@@ -10,6 +10,6 @@ urlpatterns = [
     path('comments/', include('rest_framework.urls')),
     path('comments/get', get_comments, name='get_comments'),
     path('comments/create', create_comment, name='create_comment'),
-    path('comments/update/<int:pk>', update_comment, name='update_comment'),
-    path('comments/delete/<int:pk>', delete_comment, name='delete_comment'),
+    path('comments/update/<str:pk>', update_comment, name='update_comment'),
+    path('comments/delete/<str:pk>', delete_comment, name='delete_comment'),
 ]

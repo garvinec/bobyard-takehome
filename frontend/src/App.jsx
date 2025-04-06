@@ -28,8 +28,8 @@ function App() {
             };
 
             createComment(newComment)
-              .then((createdComment) => {
-                setComments([...comments, createdComment]);
+              .then((newCommentList) => {
+                setComments(newCommentList);
               })
               .catch((error) =>
                 console.error("Error creating comment:", error)

@@ -17,7 +17,8 @@ export const getComments = async () => {
 };
 
 export const createComment = async (comment: Comment) => {
-  const response = await api.post("/comments/create", comment);
+  await api.post("/comments/create", comment);
+  const response = await api.get("/comments/get");
   return response.data;
 };
 
